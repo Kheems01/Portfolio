@@ -11,14 +11,19 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <h3 class="nav__logo">Khemuel's Portfolio'</h3>
+        <h3 class="nav__logo">Khemuel's Portfolio</h3>
 
         <div class="nav__menu">
           <ul class="nav__list">
             <li><a href="#home" class="nav__link active-link">Home</a></li>
             <li><a href="#skills" class="nav__link">Skills</a></li>
-            <li><a href="#connect" class="nav__link">Links</a></li>
-            <li><a href="#contact" class="nav__button">Login</a></li>
+            <li><a href="#works" class="nav__link">Works</a></li>
+            <li><a href="#connect" class="nav__link">Contact</a></li>
+              <div class="container">
+                <a href="CV.pdf" download="Khemuel-Resume.pdf" class="button cv-button">
+                  Download CV
+                </a>
+              </div>
           </ul>
         </div>
       </nav>
@@ -166,6 +171,77 @@
           </div>
         </div>
       </section>
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="section__title">Works</h2>
+          <div class="works__container">
+            <!-- Currensee Application -->
+            <div class="works__card">
+              <div class="works__card-inner">
+                <div class="works__card-front"> 
+                  <img src="currensee.png" alt="Currensee Application" class="works__image" />
+                  <h3 class="works__title">Currensee Application</h3>
+                </div>
+                <div class="works__card-back">
+                  <p class="works__description">
+                    Developed a mobile-based denomination UI to help visually impaired individuals
+                    recognize various currencies and accurately sum them up.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- XODE Blockchain -->
+            <div class="works__card">
+              <div class="works__card-inner">
+                <div class="works__card-front">
+                  <img src="xode.png" alt="XODE Blockchain" class="works__image" />
+                  <h3 class="works__title">XODE Blockchain</h3>
+                </div>
+                <div class="works__card-back">
+                  <p class="works__description">
+                    Developed an online blockchain UI system with built-in governance, aimed at
+                    advancing game creation and corporate activities on Web3 and Polkadot.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UCNAV -->
+            <div class="works__card">
+              <div class="works__card-inner">
+                <div class="works__card-front">
+                  <img src="ucnav.png" alt="UCNAV" class="works__image" />
+                  <h3 class="works__title">UCNAV</h3>
+                </div>
+                <div class="works__card-back">
+                  <p class="works__description">
+                    UCNAV is an innovative campus management system designed to streamline 
+                    administrative tasks, optimize resource allocation, and enhance communication 
+                    across the UCLM campus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- BookSmart -->
+            <div class="works__card">
+              <div class="works__card-inner">
+                <div class="works__card-front">
+                  <img src="booksmart.png" alt="BookSmart" class="works__image" />
+                  <h3 class="works__title">BookSmart</h3>
+                </div>
+                <div class="works__card-back">
+                  <p class="works__description">
+                    BookSmart is a revolutionary online library service providing a broad assortment
+                    of literature across varied genres and subjects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" id="connect">
@@ -186,7 +262,6 @@
         <p class="footer__copy">© 2024 Khemuel. All rights reserved</p>
       </div>
     </footer>
-    
 
     <script src="script.js"></script>
   </body>
