@@ -25,6 +25,29 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.cv-download {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #2563eb; 
+  color: #ffffff; 
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.10rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(49, 49, 49, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #3b82f6; /* Lighter blue for hover */
+}
+
 
 /* ===== REUSABLE CLASSES ===== */
 .container {
@@ -191,7 +214,14 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.skills__card:hover {
+  transform: scale(1.1); /* Expands the card */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Adds a more prominent shadow */
+}
+
 
 .skills__card-header {
   margin-bottom: 1rem;
@@ -241,6 +271,72 @@ a {
   border-radius: 1.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
+
+/* ===== WORKS SECTION ===== */
+.works__container {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 20px 0;
+}
+
+.works__card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.works__card:hover {
+  transform: rotateY(180deg);
+}
+
+.works__card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.works__card-front,
+.works__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.works__card-front {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.works__card-front img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.works__card-back {
+  background: white;
+  color: rgb(52, 50, 50);
+  text-align: center;
+  padding: 20px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* ===== FOOTER ===== */
 .footer {
